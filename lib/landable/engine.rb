@@ -51,7 +51,7 @@ module Landable
     initializer "landable.action_controller" do
       ActiveSupport.on_load :action_controller do
         # includes
-        include Landable::Traffic
+        include Landable::Traffic::Helpers
         include Landable::VariablesConcern
 
         # helpers
